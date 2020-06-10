@@ -13,6 +13,14 @@
         {
             background-image: linear-gradient(to bottom right, #4C51BF, #702459);
         }
+        .gradient-skill
+        {
+            background-image: linear-gradient(#FC8181,#FED7D7);
+        }
+        .gradient-bottom
+        {
+            background-image: linear-gradient(#4C51BF,#702459);
+        }
     </style>
     <!-- <link rel="stylesheet" type="text/js" href="tailwind.config.js"> -->
 </head>
@@ -57,7 +65,7 @@
     </section>
 
 
-    <section class="w-screen mx-auto py-4 gradient">
+    <section id="about" class="w-screen mx-auto py-4 gradient">
         <div class="px-16 py-8 text-center text-white">
             <h1 class="w-full text-5xl font-bold ">About Me</h1>
             <div class="mb-4">
@@ -67,7 +75,7 @@
                 Hai Aku Tegar Satya Negara Senang Berjumpa Dengan anda
             </h2>
             <h3 class="text-lg mb-2 ">
-                Saya Seorang Programmer dan Analis, selain bisa membuat aplikasi menggunakan bahasa pemrograman, saya juga bisa merancang suatu sistem yang dibutuhkan user 
+                Saya Seorang Programmer dan Analis, selain bisa membuat aplikasi menggunakan bahasa pemrograman, selain itu saya juga bisa merancang suatu sistem yang dibutuhkan user 
             </h3>
             <div class="w-full ">
                 <div class="px-4 py-4">
@@ -131,15 +139,115 @@
                     <button class="bg-blue-500 hover:bg-blue-700 md:bg-red-500 text-white font-bold px-4 py-2 shadow-md rounded-tl-lg rounded-br-lg">Lihat Portofolio</button>
                 </div>
             </div>
-
-
-
-
         </div>
 
     </section>
-    <section class="w-screen mx-auto py-4 bg-white h-32">Skill Framework</section>
-    <section class="w-screen mx-auto py-4 bg-indigo-300 h-32">Recent me</section>
+    <section id="skill" class="container mx-auto py-4 bg-white px-4">
+        <div class="flex flex-wrap">
+			<!-- box pertama menampilkan gambar -->
+            <div class="w-full md:w-4/12 ml-auto mr-auto px-4 mt-20">
+				<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
+				<img src="images/img4.jpg" class="max-w-full rounded-lg shadow-lg">
+            </div>
+			
+			<!-- box kedua menampilkan skill framework -->
+            <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
+                <div class="md:pr-12">
+                    <h1 class="w-full my-2 text-5xl font-bold text-center text-gray-700">Skill Framework</h1>
+                    <div class="mb-4">
+                        <div class="h-1 mx-auto bg-pink-500  w-2/3  opacity-75 my-0 mx-0 rounded"></div>
+                    </div>
+                    <p class="mt-4 text-lg text-gray-600">Berikut adalah item dan skala keahlian untuk framework :</p>
+                    <ul class="list-none mt-4">
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Codeigniter</p>
+                            <div class="gradient-skill w-7/8"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Laravel</p>
+                            <div class="gradient-skill w-3/4"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Bootstrap</p>
+                            <div class="gradient-skill w-2/3"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Expres Js</p>
+                            <div class="gradient-skill w-3/5"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">React Native</p>
+                            <div class="gradient-skill w-3/5"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Vue Js</p>
+                            <div class="gradient-skill w-1/2"></div>
+                        </li>
+                        <li class="grid grid-cols-2 py-2">
+                            <p class="text-lg text-gray-600">Spring</p>
+                            <div class="gradient-skill w-1/3"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="recent" class="w-screen mx-auto py-8 bg-white">
+        <div class="text-center mb-8">
+            <h1 class="w-full my-2 text-5xl font-bold text-gray-700">My Recent Work</h1>
+            <div class="mb-4">
+                <div class="h-1 mx-auto bg-pink-500  w-2/3 md:w-1/4 opacity-75 my-0 py-0 rounded"></div>
+            </div>
+            <p class="text-lg m-4 text-gray-600">Berikut adalah pekerjaan terbaru Saya : </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 m-8">
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+				<!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H - @clemhlrdt-->
+                <img src="images/img1.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Company Profile Perusahaan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Company Profile ini di buat untuk Company Profile Perusahaan XX</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+				<!-- source img2.jpg didownload dari situs unsplash.com, koleksi NordWood Themes - @nordwood -->
+                <img src="images/img2.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Perpustakaan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Perpustakaan untuk Perpustakaan Smk Di Garut  XX</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+			<!-- source img4.jpg didownload dari situs unsplash.com, Jess Bailey - @jessbailey-->
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+                <img src="images/img4.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Keuangan</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Keuangan untuk perusahaan ABC</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+            <div class="bg-white px-4 py-4 m-2 shadow-lg rounded">
+				<!-- source img1.jpg didownload dari situs unsplash.com, koleksi Clément H - - @clemhlrdt -->
+                <img src="images/img1.jpg" class="w-full rounded-lg">
+                <div class="px-2 py-2 text-center">
+                    <p class="font-bold text-xl mb-2 text-gray-700">Sistem Informasi Asset</p>
+                    <p class="text-gray-700 text-base">Sistem Informasi Asset untuk Laboratorium ABC</p>
+                </div>
+                <div class="px-2 py-4 text-center">
+                    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg">Detail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="w-screen mx-auto py-4 bg-indigo-700 h-32">Contact me</section>
     <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
     
